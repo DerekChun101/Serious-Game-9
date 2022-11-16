@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class MapManager : MonoBehaviour
+{
+    public List<NodeType> nodeTypes;
+    public TextMeshProUGUI nodeTxt;
+    public int currentNode;
+    public int nodeVal;
+    public GameObject[] option;
+    // Start is called before the first frame update
+    void Start()
+    {
+        populateNodes();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    void populateNodes()
+    {
+        for(int i = 0; i < option.Length; i++)
+        {
+            currentNode = Random.Range(0, 10);
+            if (currentNode <= 4)
+            {
+                nodeTxt.text = nodeTypes[1].nodeName;
+                nodeVal = 0;
+            }
+            else if (currentNode >= 7)
+            {
+                nodeTxt.text = nodeTypes[3].nodeName;
+                nodeVal = 2;
+            }
+            else
+            {
+                nodeTxt.text = nodeTypes[2].nodeName;
+                nodeVal = 1;
+            }
+            setName(i);
+        }
+        
+    }
+    void setName(int x)
+    {
+        {
+            option[x].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[nodeVal].nodeName;
+        }
+    }
+}
