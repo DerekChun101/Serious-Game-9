@@ -23,7 +23,7 @@ public class MapManager : MonoBehaviour
     }
     void populateNodes()
     {
-        for(int i = 0; i < option.Length; i++)
+        for(int i = 0; i < option.Length - 3; i++)
         {
             currentNode = Random.Range(0, 10);
             if (currentNode <= 4)
@@ -43,7 +43,10 @@ public class MapManager : MonoBehaviour
             }
             setName(i);
         }
-        
+        option[option.Length - 3].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[0].nodeName; // Start node
+        option[option.Length - 2].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[4].nodeName; // Special event node
+        option[option.Length - 1].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[3].nodeName; // Boss node
+
     }
     void setName(int x)
     {
