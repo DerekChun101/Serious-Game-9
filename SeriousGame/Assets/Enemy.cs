@@ -10,9 +10,18 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 5;
-        armor = 0;
-        strength = 1;
+        if (gameObject.tag == "Enemy")
+        {
+            health = 5;
+            armor = 0;
+            strength = 1;
+        }
+        else if(gameObject.tag == "Enemy2")
+        {
+            health = 5;
+            armor = 1;
+            strength = 1;
+        }
     }
 
     // Update is called once per frame

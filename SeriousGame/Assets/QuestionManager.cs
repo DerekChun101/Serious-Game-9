@@ -11,12 +11,18 @@ public class QuestionManager : MonoBehaviour
     public int currentQuestion;
     public TextMeshProUGUI QuestionTxt;
     public Player player;
-    public Enemy enemy;
+    public GameObject enemy;
     int damage;
 
     private void Start()
     {
         makeQuestion();
+        
+    }
+
+    public void Update()
+    {
+        enemy = GameObject.FindWithTag("Enemy");
     }
     
     public void correct()
@@ -34,7 +40,7 @@ public class QuestionManager : MonoBehaviour
     public void doDamage()
     {
         damage = player.strength;
-        enemy.damage(damage);
+        enemy.GetComponent<Enemy>().damage(damage);
     }
 
     void setAnswers()
