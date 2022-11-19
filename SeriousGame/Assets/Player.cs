@@ -18,10 +18,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(health <= 0)
-        {
-            Debug.Log("You Lose");
-        }
     }
     public void damage(int x)
     {
@@ -33,5 +29,14 @@ public class Player : MonoBehaviour
         {
             health -= x;
         }
+        if (health <= 0)
+        {
+            death();
+        }
+    }
+
+    public void death()
+    {
+        Debug.Log("You Lose");
     }
 }
