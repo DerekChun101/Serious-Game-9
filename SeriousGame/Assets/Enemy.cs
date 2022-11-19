@@ -2,30 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] public int health;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
-        health = 10;
-        armor = 1;
-        strength = 2;
+        health = 5;
+        armor = 0;
+        strength = 1;
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
+        
     }
+
     public void damage(int x)
     {
         x -= armor;
-        if(x <= 1)
+        if (x <= 1)
         {
             health -= 1;
-        } else
+        }
+        else
         {
             health -= x;
         }
@@ -34,10 +37,9 @@ public class Player : MonoBehaviour
             death();
         }
     }
-  
 
     public void death()
     {
-        Debug.Log("You Lose");
+        Destroy(gameObject);
     }
 }

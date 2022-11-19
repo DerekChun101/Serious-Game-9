@@ -11,6 +11,8 @@ public class QuestionManager : MonoBehaviour
     public int currentQuestion;
     public TextMeshProUGUI QuestionTxt;
     public Player player;
+    public Enemy enemy;
+    public int damage;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class QuestionManager : MonoBehaviour
     
     public void correct()
     {
+        doDamage();
         makeQuestion();
     }
 
@@ -26,6 +29,12 @@ public class QuestionManager : MonoBehaviour
     {
         player.damage(3);
         makeQuestion();
+    }
+
+    public void doDamage()
+    {
+        damage = player.strength;
+        enemy.damage(damage);
     }
 
     void setAnswers()
