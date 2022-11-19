@@ -12,7 +12,7 @@ public class QuestionManager : MonoBehaviour
     public TextMeshProUGUI QuestionTxt;
     public Player player;
     public Enemy enemy;
-    public int damage;
+    int damage;
 
     private void Start()
     {
