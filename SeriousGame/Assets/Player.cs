@@ -7,18 +7,15 @@ public class Player : MonoBehaviour
     [SerializeField] public int health;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
+
     // Start is called before the first frame update
     private void Start()
     {
-        health = 10;
-        armor = 1;
-        strength = 2;
+        health = PlayerData.Instance.getHealth();
+        armor = PlayerData.Instance.getArmor();
+        strength = PlayerData.Instance.getStrength();
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-    }
     public void damage(int x)
     {
         x -= armor;
@@ -31,13 +28,8 @@ public class Player : MonoBehaviour
         }
         if (health <= 0)
         {
-            death();
+            Debug.Log("You Lose");
         }
-    }
-  
-
-    public void death()
-    {
-        Debug.Log("You Lose");
+        PlayerData.Instance.setHealth(health);
     }
 }

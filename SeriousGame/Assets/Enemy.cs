@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -24,12 +25,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void damage(int x)
     {
         x -= armor;
@@ -49,6 +44,6 @@ public class Enemy : MonoBehaviour
 
     public void death()
     {
-        Destroy(gameObject);
+        Destroy(gameObject);      
     }
 }

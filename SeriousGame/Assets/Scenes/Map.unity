@@ -150,7 +150,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2023297515}
   m_RootOrder: 0
@@ -210,6 +209,7 @@ GameObject:
   - component: {fileID: 79020838}
   - component: {fileID: 79020837}
   - component: {fileID: 79020836}
+  - component: {fileID: 79020839}
   m_Layer: 5
   m_Name: Node (1)
   m_TagString: Untagged
@@ -227,7 +227,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1686651926}
   m_Father: {fileID: 1338457470}
@@ -281,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 79020837}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 79020839}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &79020837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +331,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79020834}
   m_CullTransparentMesh: 1
+--- !u!114 &79020839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79020834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &260260781
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +355,7 @@ GameObject:
   - component: {fileID: 260260785}
   - component: {fileID: 260260784}
   - component: {fileID: 260260783}
+  - component: {fileID: 260260786}
   m_Layer: 5
   m_Name: Node (12)
   m_TagString: Untagged
@@ -349,7 +373,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 639750379}
   m_Father: {fileID: 1338457470}
@@ -403,7 +426,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 260260784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 260260786}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &260260784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +477,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260260781}
   m_CullTransparentMesh: 1
+--- !u!114 &260260786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260260781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376358496
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +501,7 @@ GameObject:
   - component: {fileID: 376358500}
   - component: {fileID: 376358499}
   - component: {fileID: 376358498}
+  - component: {fileID: 376358501}
   m_Layer: 5
   m_Name: Node (3)
   m_TagString: Untagged
@@ -471,7 +519,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1377041218}
   m_Father: {fileID: 1338457470}
@@ -525,7 +572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376358499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376358501}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376358499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +623,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376358496}
   m_CullTransparentMesh: 1
+--- !u!114 &376358501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376358496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431427539
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +664,6 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0000827, y: 1.0000827, z: 1.0000827}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2088163332}
   m_Father: {fileID: 1338457470}
@@ -715,7 +785,6 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0000827, y: 1.0000827, z: 1.0000827}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1555885683}
   m_Father: {fileID: 1338457470}
@@ -820,6 +889,7 @@ GameObject:
   - component: {fileID: 523266132}
   - component: {fileID: 523266131}
   - component: {fileID: 523266130}
+  - component: {fileID: 523266133}
   m_Layer: 5
   m_Name: Node (11)
   m_TagString: Untagged
@@ -837,7 +907,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1732574188}
   m_Father: {fileID: 1338457470}
@@ -891,7 +960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 523266131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 523266133}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &523266131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,6 +1011,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523266128}
   m_CullTransparentMesh: 1
+--- !u!114 &523266133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523266128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &568482555
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +1051,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923694846}
   m_RootOrder: 0
@@ -1093,7 +1185,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1592332905}
   m_RootOrder: 0
@@ -1212,6 +1303,7 @@ GameObject:
   - component: {fileID: 582352561}
   - component: {fileID: 582352560}
   - component: {fileID: 582352559}
+  - component: {fileID: 582352562}
   m_Layer: 5
   m_Name: Node (10)
   m_TagString: Untagged
@@ -1229,7 +1321,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 935218653}
   m_Father: {fileID: 1338457470}
@@ -1283,7 +1374,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 582352560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 582352562}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582352560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,6 +1425,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582352557}
   m_CullTransparentMesh: 1
+--- !u!114 &582352562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582352557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639750378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1465,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 260260782}
   m_RootOrder: 0
@@ -1469,6 +1583,7 @@ GameObject:
   - component: {fileID: 688679818}
   - component: {fileID: 688679817}
   - component: {fileID: 688679816}
+  - component: {fileID: 688679819}
   m_Layer: 5
   m_Name: Node (2)
   m_TagString: Untagged
@@ -1486,7 +1601,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1657954887}
   m_Father: {fileID: 1338457470}
@@ -1540,7 +1654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 688679817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688679819}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &688679817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,6 +1705,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688679814}
   m_CullTransparentMesh: 1
+--- !u!114 &688679819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688679814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &818415261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1729,7 @@ GameObject:
   - component: {fileID: 818415265}
   - component: {fileID: 818415264}
   - component: {fileID: 818415263}
+  - component: {fileID: 818415266}
   m_Layer: 5
   m_Name: Boss Node
   m_TagString: Untagged
@@ -1608,7 +1747,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1285573610}
   m_Father: {fileID: 1338457470}
@@ -1662,7 +1800,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 818415264}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 818415266}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818415264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1851,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818415261}
   m_CullTransparentMesh: 1
+--- !u!114 &818415266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818415261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &846775813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1891,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1628786715}
   m_RootOrder: 0
@@ -1848,6 +2009,7 @@ GameObject:
   - component: {fileID: 911800258}
   - component: {fileID: 911800257}
   - component: {fileID: 911800256}
+  - component: {fileID: 911800259}
   m_Layer: 5
   m_Name: Special Event
   m_TagString: Untagged
@@ -1865,7 +2027,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 991241960}
   m_Father: {fileID: 1338457470}
@@ -1919,7 +2080,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911800257}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911800259}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &911800257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1958,6 +2131,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911800254}
   m_CullTransparentMesh: 1
+--- !u!114 &911800259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911800254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &923694845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2155,7 @@ GameObject:
   - component: {fileID: 923694849}
   - component: {fileID: 923694848}
   - component: {fileID: 923694847}
+  - component: {fileID: 923694850}
   m_Layer: 5
   m_Name: Node (5)
   m_TagString: Untagged
@@ -1987,7 +2173,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 568482556}
   m_Father: {fileID: 1338457470}
@@ -2041,7 +2226,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 923694848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 923694850}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &923694848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,6 +2277,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923694845}
   m_CullTransparentMesh: 1
+--- !u!114 &923694850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923694845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &935218652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2317,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582352558}
   m_RootOrder: 0
@@ -2243,7 +2451,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 911800255}
   m_RootOrder: 0
@@ -2378,7 +2585,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1284932433}
   m_RootOrder: 0
@@ -2497,6 +2703,7 @@ GameObject:
   - component: {fileID: 1028513410}
   - component: {fileID: 1028513409}
   - component: {fileID: 1028513408}
+  - component: {fileID: 1028513411}
   m_Layer: 5
   m_Name: Node (6)
   m_TagString: Untagged
@@ -2514,7 +2721,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1280914765}
   m_Father: {fileID: 1338457470}
@@ -2568,7 +2774,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1028513409}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1028513411}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1028513409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2607,6 +2825,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028513406}
   m_CullTransparentMesh: 1
+--- !u!114 &1028513411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028513406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067341021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,6 +2849,7 @@ GameObject:
   - component: {fileID: 1067341025}
   - component: {fileID: 1067341024}
   - component: {fileID: 1067341023}
+  - component: {fileID: 1067341026}
   m_Layer: 5
   m_Name: Start Node
   m_TagString: Untagged
@@ -2636,7 +2867,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1963213217}
   m_Father: {fileID: 1338457470}
@@ -2690,7 +2920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1067341024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1067341026}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1067341024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,6 +2971,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067341021}
   m_CullTransparentMesh: 1
+--- !u!114 &1067341026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067341021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1280914764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,7 +3011,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1028513407}
   m_RootOrder: 0
@@ -2876,6 +3129,7 @@ GameObject:
   - component: {fileID: 1284932436}
   - component: {fileID: 1284932435}
   - component: {fileID: 1284932434}
+  - component: {fileID: 1284932437}
   m_Layer: 5
   m_Name: Node (13)
   m_TagString: Untagged
@@ -2893,7 +3147,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1016759985}
   m_Father: {fileID: 1338457470}
@@ -2947,7 +3200,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284932435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1284932437}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284932435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2986,6 +3251,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284932432}
   m_CullTransparentMesh: 1
+--- !u!114 &1284932437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284932432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285573609
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,7 +3291,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 818415262}
   m_RootOrder: 0
@@ -3149,7 +3425,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 482865284}
   - {fileID: 431427540}
@@ -3243,7 +3518,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 376358497}
   m_RootOrder: 0
@@ -3378,7 +3652,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 482865284}
   m_RootOrder: 0
@@ -3499,6 +3772,7 @@ GameObject:
   - component: {fileID: 1592332908}
   - component: {fileID: 1592332907}
   - component: {fileID: 1592332906}
+  - component: {fileID: 1592332909}
   m_Layer: 5
   m_Name: Node (7)
   m_TagString: Untagged
@@ -3516,7 +3790,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 574079117}
   m_Father: {fileID: 1338457470}
@@ -3570,7 +3843,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1592332907}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592332909}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1592332907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3609,6 +3894,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592332904}
   m_CullTransparentMesh: 1
+--- !u!114 &1592332909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592332904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1628786714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +3918,7 @@ GameObject:
   - component: {fileID: 1628786718}
   - component: {fileID: 1628786717}
   - component: {fileID: 1628786716}
+  - component: {fileID: 1628786719}
   m_Layer: 5
   m_Name: Node (4)
   m_TagString: Untagged
@@ -3638,7 +3936,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 846775814}
   m_Father: {fileID: 1338457470}
@@ -3692,7 +3989,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1628786717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1628786719}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1628786717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,6 +4040,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628786714}
   m_CullTransparentMesh: 1
+--- !u!114 &1628786719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628786714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1657954886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,7 +4080,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 688679815}
   m_RootOrder: 0
@@ -3894,7 +4214,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2113946711}
   m_RootOrder: 0
@@ -4029,7 +4348,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 79020835}
   m_RootOrder: 0
@@ -4164,7 +4482,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 523266129}
   m_RootOrder: 0
@@ -4301,7 +4618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -4334,7 +4650,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -4367,7 +4682,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915446304}
   m_RootOrder: 0
@@ -4486,6 +4800,7 @@ GameObject:
   - component: {fileID: 1915446307}
   - component: {fileID: 1915446306}
   - component: {fileID: 1915446305}
+  - component: {fileID: 1915446308}
   m_Layer: 5
   m_Name: Node (14)
   m_TagString: Untagged
@@ -4503,7 +4818,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1830879152}
   m_Father: {fileID: 1338457470}
@@ -4557,7 +4871,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1915446306}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1915446308}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1915446306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4596,6 +4922,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915446303}
   m_CullTransparentMesh: 1
+--- !u!114 &1915446308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915446303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1955079321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,7 +5024,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1338457470}
   m_Father: {fileID: 0}
@@ -4725,7 +5062,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1067341022}
   m_RootOrder: 0
@@ -4911,7 +5247,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 13322036}
   m_Father: {fileID: 0}
@@ -4945,7 +5280,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431427540}
   m_RootOrder: 0
@@ -5064,6 +5398,7 @@ GameObject:
   - component: {fileID: 2113946714}
   - component: {fileID: 2113946713}
   - component: {fileID: 2113946712}
+  - component: {fileID: 2113946715}
   m_Layer: 5
   m_Name: Node (9)
   m_TagString: Untagged
@@ -5081,7 +5416,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1659818676}
   m_Father: {fileID: 1338457470}
@@ -5135,7 +5469,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2113946713}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2113946715}
+        m_TargetAssemblyTypeName: MapChoiceScript, Assembly-CSharp
+        m_MethodName: nodeChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2113946713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5174,3 +5520,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113946710}
   m_CullTransparentMesh: 1
+--- !u!114 &2113946715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113946710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d9bbd036404c459c36c090d79c652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

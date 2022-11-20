@@ -12,7 +12,7 @@ public class QuestionManager : MonoBehaviour
     public TextMeshProUGUI QuestionTxt;
     public Player player;
     public GameObject enemy;
-    int damage;
+    public int damage;
 
     private void Start()
     {
@@ -24,7 +24,10 @@ public class QuestionManager : MonoBehaviour
     {
         enemy = GameObject.FindWithTag("Enemy");
     }
-    
+    public void Update()
+    {
+        enemy = GameObject.FindWithTag("Enemy");
+    }
     public void correct()
     {
         doDamage();

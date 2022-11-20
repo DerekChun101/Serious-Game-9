@@ -41,14 +41,14 @@ public class MapManager : MonoBehaviour
                 nodeTxt.text = nodeTypes[2].nodeName;
                 nodeVal = 1;
             }
-            setName(i);
+            setNode(i);
         }
         option[option.Length - 3].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[0].nodeName; // Start node
         option[option.Length - 2].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[4].nodeName; // Special event node
         option[option.Length - 1].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[3].nodeName; // Boss node
 
     }
-    void setName(int x)
+    void setNode(int x)
     {
         {
             option[x].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[nodeVal].nodeName;
