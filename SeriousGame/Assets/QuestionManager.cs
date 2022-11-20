@@ -19,11 +19,7 @@ public class QuestionManager : MonoBehaviour
         makeQuestion();
         
     }
-
-    public void Update()
-    {
-        enemy = GameObject.FindWithTag("Enemy");
-    }
+    
     public void Update()
     {
         enemy = GameObject.FindWithTag("Enemy");
