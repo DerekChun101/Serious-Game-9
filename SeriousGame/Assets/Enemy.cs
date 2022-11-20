@@ -44,8 +44,6 @@ public class Enemy : MonoBehaviour
 
     public void death()
     {
-        Destroy(gameObject);
-        Debug.Log("You Win");
-        SceneManager.LoadScene("Map");
+        Destroy(gameObject);      
     }
 }
