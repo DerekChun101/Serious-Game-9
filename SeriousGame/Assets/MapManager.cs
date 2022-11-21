@@ -52,6 +52,7 @@ public class MapManager : MonoBehaviour
     {
         {
             option[x].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[nodeVal].nodeName;
+
         }
     }
 }
