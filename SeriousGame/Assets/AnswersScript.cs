@@ -11,11 +11,11 @@ public class AnswersScript : MonoBehaviour
     {
         if (isCorrect)
         {
-            Debug.Log("Correct");
+            //Debug.Log("Correct");
             questionManager.correct();
         } else
         {
-            Debug.Log("Wrong");
+            //Debug.Log("Wrong");
             questionManager.wrong();
         }
     }
