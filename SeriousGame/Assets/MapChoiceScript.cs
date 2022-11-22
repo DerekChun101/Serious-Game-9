@@ -86,17 +86,18 @@ public class MapChoiceScript : MonoBehaviour
                 break;
         }
         PlayerData.Instance.setDepth();
-        switch (nodeType)
+        switch (GetComponent<NodeTypeScript>().typeOfNode)
         {
             case 0:
                 nodeCombat();
                 break;
-            case 1:
+            case 2:
                 nodeEvent();
                 break;
             default:
                 nodeCombat();
+                break;
         }
-        
+        //nodeCombat();
     }
 }

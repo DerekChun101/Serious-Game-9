@@ -60,12 +60,15 @@ public class MapManager : MonoBehaviour
         option[option.Length - 3].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[0].nodeName; // Start node
         option[option.Length - 2].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[4].nodeName; // Special event node
         option[option.Length - 1].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[3].nodeName; // Boss node
+        option[option.Length - 3].GetComponent<NodeTypeScript>().typeOfNode = 0;
+        option[option.Length - 2].GetComponent<NodeTypeScript>().typeOfNode = 4;
+        option[option.Length - 1].GetComponent<NodeTypeScript>().typeOfNode = 3;
     }
     void setNode(int x)
     {
         {
             option[x].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[nodeVal].nodeName;
-
+            option[x].GetComponent<NodeTypeScript>().typeOfNode = nodeVal;
         }
     }
 }
