@@ -151,6 +151,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 591005863}
   m_RootOrder: 0
@@ -285,6 +286,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -39.503036, y: -16.9, z: -3515.186}
   m_LocalScale: {x: 39.079994, y: 39.079994, z: 39.079994}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 221251797}
   - {fileID: 1835498253}
@@ -319,6 +321,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1180976555}
   m_RootOrder: 0
@@ -348,7 +351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 925f6ffa3cba111458dbd3dba90bb389, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7662955175de7594d82ecba6748cb9fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -395,6 +398,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 89.94848}
   m_LocalScale: {x: 0.02558854, y: 0.02558854, z: 0.02558854}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1186804122}
   m_Father: {fileID: 1106374223}
@@ -515,6 +519,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 89.94848}
   m_LocalScale: {x: 0.02558854, y: 0.02558854, z: 0.02558854}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 36121312}
   m_RootOrder: 0
@@ -652,6 +657,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 89.94848}
   m_LocalScale: {x: 0.02558854, y: 0.02558854, z: 0.02558854}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 865772564}
   m_Father: {fileID: 1106374223}
@@ -835,6 +841,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -868,6 +875,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 89.94848}
   m_LocalScale: {x: 0.02558854, y: 0.02558854, z: 0.02558854}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 28112906}
   m_Father: {fileID: 1106374223}
@@ -1000,6 +1008,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 464939267}
   m_RootOrder: 0
@@ -1134,6 +1143,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.026103124, y: 0.026103124, z: 0.026103124}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1106374223}
   m_RootOrder: 3
@@ -1267,6 +1277,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -39.503036, y: -20.823406, z: -3515.186}
   m_LocalScale: {x: 39.079994, y: 39.079994, z: 39.079994}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 464939267}
   - {fileID: 210777394}
@@ -1377,6 +1388,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 193339222}
   - {fileID: 1106374223}
@@ -1417,6 +1429,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 210777394}
   m_RootOrder: 0
@@ -1564,6 +1577,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1596,6 +1610,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99116, y: 0.99116, z: 0.99116}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1835498253}
   m_RootOrder: 0
@@ -1731,6 +1746,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 89.94848}
   m_LocalScale: {x: 0.025362337, y: 0.025362337, z: 0.025362337}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1501928206}
   m_Father: {fileID: 36121312}
@@ -1853,6 +1869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1885,6 +1902,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
