@@ -10,6 +10,8 @@ public class PlayerData : MonoBehaviour
     int playerStrength;
     int[] openNode = new int[2];
     int depth;
+    int[] nodes = new int[13];
+    bool set;
 
     public static PlayerData Instance;
 
@@ -34,6 +36,7 @@ public class PlayerData : MonoBehaviour
         depth = 0;
         openNode[0] = 0;
         openNode[1] = -1;
+        set = false;
     }
 
     public void setHealth(int x)
@@ -94,5 +97,25 @@ public class PlayerData : MonoBehaviour
     public int getDepth()
     {
         return depth;
+    }
+
+    public void setNodeTrue()
+    {
+        set = true;
+    }
+
+    public bool getSet()
+    {
+        return set;
+    }
+
+    public void setNode(int x, int i)
+    {
+        nodes[i] = x;
+    }
+
+    public int[] getNode()
+    {
+        return nodes;
     }
 }

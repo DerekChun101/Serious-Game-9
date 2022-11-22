@@ -30,6 +30,11 @@ public class MapChoiceScript : MonoBehaviour
         SceneManager.LoadScene("Combat");
     }
 
+    public void nodeEvent()
+    {
+        SceneManager.LoadScene("Event");
+    }
+
     public void nodeType()
     { 
         switch (PlayerData.Instance.getDepth())
@@ -81,6 +86,17 @@ public class MapChoiceScript : MonoBehaviour
                 break;
         }
         PlayerData.Instance.setDepth();
-        nodeCombat();
+        switch (nodeType)
+        {
+            case 0:
+                nodeCombat();
+                break;
+            case 1:
+                nodeEvent();
+                break;
+            default:
+                nodeCombat();
+        }
+        
     }
 }
