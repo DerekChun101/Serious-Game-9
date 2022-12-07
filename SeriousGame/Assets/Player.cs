@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
         strength = PlayerData.Instance.getStrength();
         currentHealth = PlayerData.Instance.getCurrentHealth();
         healthBar.SetMaxHealth(MaxHealth);
+        healthBar.SetHealth(currentHealth);
         
         
     }
