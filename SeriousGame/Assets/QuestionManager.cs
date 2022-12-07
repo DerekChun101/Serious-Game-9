@@ -10,19 +10,22 @@ public class QuestionManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
     public TextMeshProUGUI QuestionTxt;
-    public Player player;
+    public GameObject player;
     public GameObject enemy;
     public int damage;
 
     private void Start()
     {
         makeQuestion();
-        
+        if(player == null){
+        player = GameObject.FindWithTag("Player");
+        }
     }
     
     public void Update()
     {
         enemy = GameObject.FindWithTag("Enemy");
+        
     }
     public void correct()
     {
@@ -32,13 +35,13 @@ public class QuestionManager : MonoBehaviour
 
     public void wrong()
     {
-        player.damage(3);
+        player.GetComponent<Player>().damage(3);
         makeQuestion();
     }
 
     public void doDamage()
     {
-        damage = player.strength;
+        damage = player.GetComponent<Player>().returnstrength();
         enemy.GetComponent<Enemy>().damage(damage);
     }
 
