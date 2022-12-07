@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] public int MaxHealth;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
+    [SerializeField] AudioSource audio;
     public int currentHealth;
 
     public HealthBar healthBar; 
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
 
     public void damage(int x)
     {
+        AudioSource.PlayClipAtPoint(audio.clip, transform.position);
         x -= armor;
         if(x <= 1)
         {
@@ -40,6 +43,8 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("You Lose");
+            SceneManager.LoadScene("DeathScreen");
+
         }
         PlayerData.Instance.setCurrentHealth(currentHealth);
         healthBar.SetHealth(currentHealth);
