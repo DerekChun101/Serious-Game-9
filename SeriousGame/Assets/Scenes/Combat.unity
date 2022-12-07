@@ -444,7 +444,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -342.48178, w: 0}
+  m_margin: {x: -369.30185, y: 0, z: -363.8905, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -920.47095, w: 0}
+  m_margin: {x: -850.9999, y: 0, z: -848.2162, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -792,7 +792,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474781299}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -913,6 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c592a864f775a4a8a15b5c32279b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsMenu: []
 --- !u!4 &566471701
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,7 +1021,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1049,7 +1050,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -357.26538, w: 0}
+  m_margin: {x: -374.654, y: 0, z: -357.26538, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1453,7 +1454,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1482,7 +1483,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -394.22372, w: 0}
+  m_margin: {x: -371.9781, y: 0, z: -372.815, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1802,28 +1803,129 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a9648ec1612d146935d740bd8d055c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QnA:
-  - Question: 1+1
+  QnA1:
+  - Question: 1 + 5
     Answers:
+    - 6
     - 4
-    - 2
-    - 3
-    - 1
-    CorrectAnswer: 2
-  - Question: 3*5
-    Answers:
-    - 35
-    - 42
-    - 15
-    - 8
-    CorrectAnswer: 3
-  - Question: 13-4
-    Answers:
-    - 9
-    - 17
-    - 2
-    - 46
+    - 5
+    - 7
     CorrectAnswer: 1
+  - Question: 8 * 4
+    Answers:
+    - 11
+    - 24
+    - 12
+    - 32
+    CorrectAnswer: 4
+  - Question: 16 - 2
+    Answers:
+    - 18
+    - 14
+    - 16
+    - 8
+    CorrectAnswer: 2
+  - Question: 81 / 9
+    Answers:
+    - 72
+    - 19
+    - 9
+    - 13
+    CorrectAnswer: 3
+  - Question: 5 + 15 / 5
+    Answers:
+    - 8
+    - 4
+    - 12
+    - 5
+    CorrectAnswer: 1
+  QnA2:
+  - Question: x^2 + 7x - 30
+    Answers:
+    - x = -10, 3
+    - x = 10, 3
+    - x = 7, -30
+    - x = -7, 30
+    CorrectAnswer: 1
+  - Question: Simplify 10x/(x - 8) * (6x^2 - 48x)/6x
+    Answers:
+    - 5x / 3
+    - 10x
+    - 10x / (x - 8)
+    - (6x(x - 8))/6x
+    CorrectAnswer: 2
+  - Question: Expand (x + 5)(x^2 - 3)
+    Answers:
+    - 3x^5-3x+5x^2- 5
+    - x^2-5x+3x^1-15
+    - x^3-3x^2+5x^1-15
+    - x^3-3x+5x^2-15
+    CorrectAnswer: 4
+  - Question: 4(x + 3) + 9 - 5 =32
+    Answers:
+    - x = 7
+    - x = 6
+    - x = 4
+    - ' x = 0'
+    CorrectAnswer: 3
+  QnA3:
+  - Question: 'Area of a triangle: w = 5 h = 6'
+    Answers:
+    - 15
+    - 60
+    - 30
+    - 7.5
+    CorrectAnswer: 1
+  - Question: 'Area of circle: d =16'
+    Answers:
+    - 256pi
+    - 64pi
+    - 8pi
+    - 16pi
+    CorrectAnswer: 2
+  - Question: A traiangle has angles 87, 42, x
+    Answers:
+    - x = 231
+    - x = 42
+    - ' x =180'
+    - x = 51
+    CorrectAnswer: 4
+  - Question: Square Perimeter = 28 Area = x
+    Answers:
+    - x = 14
+    - x = 7
+    - x = 49
+    - x = 196
+    CorrectAnswer: 3
+  QnA4:
+  - Question: Find the derivative of 5x^7+ 12x^3+2x+1
+    Answers:
+    - 35x^6 + 36x^2 + 2
+    - 7x^5 + 3x^12 + x^2
+    - 35x^7 + 36x^3 + 2x + 1
+    - 7x^6 + 12x^2 + 1
+    CorrectAnswer: 1
+  - Question: 3x^5 - 8x^3 + 2
+    Answers:
+    - (3/5)x^5 - (8/3)x^3 + 2x + C
+    - (3/4)x^4 + 3x^2 + C
+    - (1/2)x^6 - 2x^4 + 2x + C
+    - (1/6)x^6 - (1/4)x^4 + 2x + C
+    CorrectAnswer: 3
+  - Question: (x^5)''
+    Answers:
+    - 5x^4
+    - 20x^3
+    - 25x^2
+    - 5x
+    CorrectAnswer: 2
+  - Question: Lim x->infinity (3x^5 + 5x + 2)/(2x^5 - 2x + 2)
+    Answers:
+    - DNE
+    - 0
+    - infinity
+    - 3/2
+    CorrectAnswer: 4
   options:
   - {fileID: 1021028753}
   - {fileID: 22123834}
@@ -1834,6 +1936,7 @@ MonoBehaviour:
   player: {fileID: 1918475535}
   enemy: {fileID: 0}
   damage: 0
+  questionSet: 0
 --- !u!4 &1348002397
 Transform:
   m_ObjectHideFlags: 0
@@ -2301,7 +2404,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2330,7 +2433,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -386.83206, w: 0}
+  m_margin: {x: -371.97794, y: 0, z: -368.09937, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2680,7 +2783,7 @@ AudioSource:
   m_GameObject: {fileID: 1918475535}
   m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1fe2ef7208a21444e96bd146d4821ff0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9dc1bfd38d4d77f40893d7f5cb570d47, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

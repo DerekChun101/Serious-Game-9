@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        PlayerData.Instance.defaultSettings();
         SceneManager.LoadScene("Main Menu");
     }
 }

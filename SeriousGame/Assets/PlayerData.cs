@@ -14,6 +14,7 @@ public class PlayerData : MonoBehaviour
     int[] nodes = new int[13];
     bool set;
     bool settingsOpen;
+    public GameObject[] settingsMenu;
 
     public static PlayerData Instance;
 
@@ -32,6 +33,11 @@ public class PlayerData : MonoBehaviour
 
     void Start()
     {
+        defaultSettings();
+    }
+
+    public void defaultSettings()
+    {
         playerHealth = 10;
         playerCurrentHealth = playerHealth;
         playerArmor = 1;
@@ -41,6 +47,11 @@ public class PlayerData : MonoBehaviour
         openNode[1] = -1;
         set = false;
         settingsOpen = false;
+        settingsMenu = GameObject.FindGameObjectsWithTag("Settings");
+        foreach (GameObject g in settingsMenu)
+        {
+            g.SetActive(false);
+        }
     }
     public void setCurrentHealth(int x) 
     {
@@ -137,5 +148,10 @@ public class PlayerData : MonoBehaviour
     public bool getSettingsOpen()
     {
         return settingsOpen;
+    }
+
+    public GameObject[] getSettingsMenu()
+    {
+        return settingsMenu;
     }
 }
