@@ -6,6 +6,7 @@ public class PlayerData : MonoBehaviour
 {
 
     int playerHealth;
+    int playerCurrentHealth;
     int playerArmor;
     int playerStrength;
     int[] openNode = new int[2];
@@ -31,6 +32,7 @@ public class PlayerData : MonoBehaviour
     void Start()
     {
         playerHealth = 10;
+        playerCurrentHealth = playerHealth;
         playerArmor = 1;
         playerStrength = 2;
         depth = 0;
@@ -38,7 +40,10 @@ public class PlayerData : MonoBehaviour
         openNode[1] = -1;
         set = false;
     }
-
+    public void setCurrentHealth(int x) 
+    {
+        playerCurrentHealth = x;
+    }
     public void setHealth(int x)
     {
         playerHealth = x;
@@ -53,7 +58,10 @@ public class PlayerData : MonoBehaviour
     {
         playerStrength = x;
     }
-
+    public int getCurrentHealth() 
+    {
+        return playerCurrentHealth;
+    }
     public int getHealth()
     {
         return playerHealth;
