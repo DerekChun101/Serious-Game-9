@@ -12,6 +12,7 @@ public class PlayerData : MonoBehaviour
     int depth;
     int[] nodes = new int[13];
     bool set;
+    bool settingsOpen;
 
     public static PlayerData Instance;
 
@@ -37,6 +38,7 @@ public class PlayerData : MonoBehaviour
         openNode[0] = 0;
         openNode[1] = -1;
         set = false;
+        settingsOpen = false;
     }
 
     public void setHealth(int x)
@@ -117,5 +119,15 @@ public class PlayerData : MonoBehaviour
     public int[] getNode()
     {
         return nodes;
+    }
+
+    public void setSettingsOpen()
+    {
+        settingsOpen = !settingsOpen;
+    }
+
+    public bool getSettingsOpen()
+    {
+        return settingsOpen;
     }
 }
