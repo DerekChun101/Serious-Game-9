@@ -11,9 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] AudioSource audio1;
     [SerializeField] AudioSource audio2;
     public int currentHealth;
-
     public HealthBar healthBar; 
-    
+    public Animator animator;
 
     // Start is called before the first frame update
     private void Start()
@@ -24,7 +23,7 @@ public class Player : MonoBehaviour
         currentHealth = PlayerData.Instance.getCurrentHealth(); //MaxHealth; ;
         healthBar.SetMaxHealth(MaxHealth);
         healthBar.SetHealth(currentHealth);
-        
+        animator.SetBool("Attack", false);
         
     }
 

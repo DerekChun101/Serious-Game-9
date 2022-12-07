@@ -6,6 +6,7 @@ public class AnswersScript : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuestionManager questionManager;
+    
 
     public void Answer()
     {
@@ -13,6 +14,7 @@ public class AnswersScript : MonoBehaviour
         {
             //Debug.Log("Correct");
             questionManager.correct();
+            
         } else
         {
             //Debug.Log("Wrong");

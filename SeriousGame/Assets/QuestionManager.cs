@@ -17,6 +17,8 @@ public class QuestionManager : MonoBehaviour
     public GameObject enemy;
     public int damage;
     public int questionSet;
+    public Animator animator;
+
 
     private void Start()
     {
@@ -34,8 +36,11 @@ public class QuestionManager : MonoBehaviour
     }
     public void correct()
     {
+        animator.SetBool("Attack", true);
         doDamage();
         makeQuestion();
+        StartCoroutine(setAttackFalse());
+
     }
 
     public void wrong()
@@ -48,6 +53,11 @@ public class QuestionManager : MonoBehaviour
     {
         damage = player.GetComponent<Player>().returnstrength();
         enemy.GetComponent<Enemy>().damage(damage);
+    }
+    IEnumerator setAttackFalse() {
+            yield return new WaitForSeconds(1);
+            animator.SetBool("Attack", false);
+            
     }
 
     void setAnswers()
