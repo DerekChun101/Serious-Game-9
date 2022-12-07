@@ -17,7 +17,8 @@ public class QuestionManager : MonoBehaviour
     public GameObject enemy;
     public int damage;
     public int questionSet;
-    public Animator animator;
+    public Animator animator; //Controlls player animation
+    [SerializeField] GameObject swordSlash;
 
 
     private void Start()
@@ -40,6 +41,7 @@ public class QuestionManager : MonoBehaviour
         doDamage();
         makeQuestion();
         StartCoroutine(setAttackFalse());
+        spawnProjectile();
 
     }
 
@@ -53,6 +55,12 @@ public class QuestionManager : MonoBehaviour
     {
         damage = player.GetComponent<Player>().returnstrength();
         enemy.GetComponent<Enemy>().damage(damage);
+    }
+    void spawnProjectile() {
+
+            Vector2 position = new Vector2(-4, 2);
+            GameObject new_projectile = Instantiate(swordSlash, position, Quaternion.identity);
+            
     }
     IEnumerator setAttackFalse() {
             yield return new WaitForSeconds(1);
