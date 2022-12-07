@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] public int MaxHealth;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
-    [SerializeField] AudioSource audios;
+    [SerializeField] AudioSource audio1;
+    [SerializeField] AudioSource audio2;
     public int currentHealth;
 
     public HealthBar healthBar; 
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
 
     public void damage(int x)
     {
-        AudioSource.PlayClipAtPoint(audios.clip, transform.position);
+        AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
         x -= armor;
         if(x <= 1)
         {
@@ -44,11 +45,17 @@ public class Player : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
+            StartCoroutine(Death());
             Debug.Log("You Lose");
-            SceneManager.LoadScene("DeathScreen");
+            
 
         }
         PlayerData.Instance.setCurrentHealth(currentHealth);
         healthBar.SetHealth(currentHealth);
+    }
+    IEnumerator Death() {
+            AudioSource.PlayClipAtPoint(audio2.clip, transform.position);
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene("DeathScreen");
     }
 }
