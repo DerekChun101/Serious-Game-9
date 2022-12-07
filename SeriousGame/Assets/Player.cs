@@ -4,32 +4,43 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] public int health;
+    [SerializeField] public int MaxHealth;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
+    public int currentHealth;
+
+    public HealthBar healthBar; 
+    
 
     // Start is called before the first frame update
     private void Start()
     {
-        health = PlayerData.Instance.getHealth();
+        MaxHealth = PlayerData.Instance.getHealth();
         armor = PlayerData.Instance.getArmor();
         strength = PlayerData.Instance.getStrength();
+        currentHealth = PlayerData.Instance.getCurrentHealth();
+        healthBar.SetMaxHealth(MaxHealth);
+        
+        
     }
+
+
 
     public void damage(int x)
     {
         x -= armor;
         if(x <= 1)
         {
-            health -= 1;
+            currentHealth -= 1;
         } else
         {
-            health -= x;
+            currentHealth -= x;
         }
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Debug.Log("You Lose");
         }
-        PlayerData.Instance.setHealth(health);
+        PlayerData.Instance.setCurrentHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
     }
 }
