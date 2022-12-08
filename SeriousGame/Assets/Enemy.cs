@@ -38,12 +38,11 @@ public class Enemy : MonoBehaviour
         }
         if (health <= 0)
         {
-            death();
+            StartCoroutine(Death());
         }
     }
-
-    public void death()
-    {
-        Destroy(gameObject);      
+    IEnumerator Death() {
+        yield return new WaitForSeconds(1);
+         Destroy(gameObject);
     }
 }
