@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemy;
+    //public GameObject enemy2;
                   
     Vector2[] vectors = { new Vector2(3, 1.8f), new Vector2(5, 1.8f), new Vector2(7, 1.8f) };
     Vector2[] vectors2 = { new Vector2(3, 4.33f), new Vector2(5, 4.33f), new Vector2(7, 4.33f) };
@@ -26,7 +27,12 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 1; i <= Num_Enemy; i++)
         {
             GameObject new_Enemy = Instantiate(enemy, vectors[i - 1], Quaternion.identity);
-            
+           /* if(Random.Range(1,2) == 1) {
+                GameObject new_Enemy = Instantiate(enemy, vectors[i - 1], Quaternion.identity);
+            }
+            else if(Random.Range(1,2) == 2) {
+                GameObject new_Enemy = Instantiate(enemy2, vectors[i - 1], Quaternion.identity);
+            } */
 
         }
     }

@@ -20,4 +20,8 @@ public class MainMenu : MonoBehaviour
         PlayerData.Instance.defaultSettings();
         SceneManager.LoadScene("Main Menu");
     }
+    public void goToInstructions()
+    {
+        SceneManager.LoadScene("InstructionsMenu");
+    }
 }
