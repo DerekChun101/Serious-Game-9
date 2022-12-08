@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public int health;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
+    [SerializeField] AudioSource audio1;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,7 @@ public class Enemy : MonoBehaviour
         }
     }
     IEnumerator Death() {
+         AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
         yield return new WaitForSeconds(1);
          Destroy(gameObject);
     }

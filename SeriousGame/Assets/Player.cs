@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] public int strength;
     [SerializeField] AudioSource audio1;
     [SerializeField] AudioSource audio2;
+    
     public int currentHealth;
     public HealthBar healthBar; 
     public Animator animator;

@@ -19,7 +19,7 @@ public class QuestionManager : MonoBehaviour
     public int questionSet;
     public Animator animator; //Controlls player animation
     [SerializeField] GameObject swordSlash;
-
+    [SerializeField] AudioSource audio1;
 
     private void Start()
     {
@@ -42,6 +42,7 @@ public class QuestionManager : MonoBehaviour
         makeQuestion();
         StartCoroutine(setAttackFalse());
         spawnProjectile();
+        
 
     }
 
@@ -60,6 +61,7 @@ public class QuestionManager : MonoBehaviour
 
             Vector2 position = new Vector2(-4, 2);
             GameObject new_projectile = Instantiate(swordSlash, position, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
             
     }
     IEnumerator setAttackFalse() {
