@@ -48,3 +48,6 @@ TagManager:
   - name: Settings
     uniqueID: 2930762031
     locked: 0
+  - name: front
+    uniqueID: 2089179275
+    locked: 0

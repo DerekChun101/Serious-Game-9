@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     }
     IEnumerator Death() {
             AudioSource.PlayClipAtPoint(audio2.clip, transform.position);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene("DeathScreen");
     }
 }
