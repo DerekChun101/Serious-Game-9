@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(Button))]
 
 public class MapChoiceScript : MonoBehaviour
 {
     string node;
     char subNode;
     int nodePos;
+    Button nodeButton;
+
     public void nodeChoice()
     {
+        nodeButton = gameObject.GetComponent<Button>();
         node = EventSystem.current.currentSelectedGameObject.name;
         subNode = node[node.Length - 2];
         nodePos = subNode - '0';
@@ -86,6 +92,7 @@ public class MapChoiceScript : MonoBehaviour
                 break;
         }
         PlayerData.Instance.setDepth();
+        nodeButton.interactable = false;
         switch (GetComponent<NodeTypeScript>().typeOfNode)
         {
             case 0:
