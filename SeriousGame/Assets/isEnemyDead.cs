@@ -28,7 +28,20 @@ public class isEnemyDead : MonoBehaviour
         {
             enabled = false;
             Debug.Log("You Win");
+<<<<<<< Updated upstream
             SceneManager.LoadScene("Map");
+=======
+            AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
+            yield return new WaitForSeconds(2);
+            if(PlayerData.Instance.getDepth() == 8)
+            {
+                SceneManager.LoadScene("WinScreen");
+            }
+            else
+            {
+                SceneManager.LoadScene("Map");
+            }
+>>>>>>> Stashed changes
         }
     }
 }

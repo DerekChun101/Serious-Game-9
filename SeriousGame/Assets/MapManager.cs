@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class MapManager : MonoBehaviour
     public int nodeVal;
     public GameObject[] option;
     public int[] nodes = new int[13];
+    public bool[] visited = new bool[15];
+    Button myButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +59,15 @@ public class MapManager : MonoBehaviour
                 nodeVal = nodes[i];
                 setNode(i);
             }
+            visited = PlayerData.Instance.getVisited();
+            for(int i = 0; i < visited.Length; i++)
+            {
+                if (visited[i])
+                {
+                    option[i].GetComponent<Button>().interactable = false;
+                }
+            }
+           
         }
         option[option.Length - 3].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[0].nodeName; // Start node
         option[option.Length - 2].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = nodeTypes[4].nodeName; // Special event node

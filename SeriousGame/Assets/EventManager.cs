@@ -27,7 +27,8 @@ public class EventManager : MonoBehaviour
 
     public void healthUp()
     {
-        PlayerData.Instance.setHealth(PlayerData.Instance.getHealth() + 1);
+        PlayerData.Instance.setHealth(PlayerData.Instance.getHealth() + 2);
+        PlayerData.Instance.setCurrentHealth(PlayerData.Instance.getCurrentHealth() + 2);
         SceneManager.LoadScene("Map");
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
@@ -9,10 +10,15 @@ public class PlayerData : MonoBehaviour
     int playerArmor;
     int playerStrength;
     int[] openNode = new int[2];
-    int depth;
+    [SerializeField] int depth;
     int[] nodes = new int[13];
     bool set;
     bool settingsOpen;
+<<<<<<< Updated upstream
+=======
+    public GameObject[] settingsMenu;
+    bool[] visited = new bool[15];
+>>>>>>> Stashed changes
 
     public static PlayerData Instance;
 
@@ -31,6 +37,21 @@ public class PlayerData : MonoBehaviour
 
     void Start()
     {
+<<<<<<< Updated upstream
+=======
+
+        settingsOpen = false;
+        settingsMenu = GameObject.FindGameObjectsWithTag("Settings");
+        foreach (GameObject g in settingsMenu)
+        {
+            g.SetActive(false);
+        }
+        defaultSettings();
+    }
+
+    public void defaultSettings()
+    {
+>>>>>>> Stashed changes
         playerHealth = 10;
         playerArmor = 1;
         playerStrength = 2;
@@ -38,7 +59,18 @@ public class PlayerData : MonoBehaviour
         openNode[0] = 0;
         openNode[1] = -1;
         set = false;
+<<<<<<< Updated upstream
         settingsOpen = false;
+=======
+        for(int i = 0; i < visited.Length; i++)
+        {
+            visited[i] = false;
+        }
+    }
+    public void setCurrentHealth(int x)
+    {
+        playerCurrentHealth = x;
+>>>>>>> Stashed changes
     }
 
     public void setHealth(int x)
@@ -55,7 +87,14 @@ public class PlayerData : MonoBehaviour
     {
         playerStrength = x;
     }
+<<<<<<< Updated upstream
 
+=======
+    public int getCurrentHealth()
+    {
+        return playerCurrentHealth;
+    }
+>>>>>>> Stashed changes
     public int getHealth()
     {
         return playerHealth;
@@ -94,7 +133,7 @@ public class PlayerData : MonoBehaviour
     public void setDepth()
     {
         depth++;
-    } 
+    }
 
     public int getDepth()
     {
@@ -130,4 +169,23 @@ public class PlayerData : MonoBehaviour
     {
         return settingsOpen;
     }
+<<<<<<< Updated upstream
+=======
+
+    public GameObject[] getSettingsMenu()
+    {
+        return settingsMenu;
+    }
+
+
+    public void setVisited(int i)
+    {
+        visited[i] = true;
+    }
+
+    public bool[] getVisited()
+    {
+        return visited;
+    }
+>>>>>>> Stashed changes
 }

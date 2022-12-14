@@ -16,6 +16,10 @@ public class QuestionManager : MonoBehaviour
 
     private void Start()
     {
+<<<<<<< Updated upstream
+=======
+        questionSet = Random.Range(0, 4);
+>>>>>>> Stashed changes
         makeQuestion();
         
     }
