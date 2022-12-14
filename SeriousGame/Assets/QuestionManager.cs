@@ -24,7 +24,7 @@ public class QuestionManager : MonoBehaviour
 
     private void Start()
     {
-        questionSet = Random.Range(0, 3);
+        questionSet = Random.Range(0, 4);
         makeQuestion();
         if(player == null){
         player = GameObject.FindWithTag("Player");

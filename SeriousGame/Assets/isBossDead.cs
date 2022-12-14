@@ -31,7 +31,8 @@ public class isBossDead : MonoBehaviour
             Debug.Log("You Win");
             AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
             yield return new WaitForSeconds(2);
-            SceneManager.LoadScene("Map");
+            Debug.Log("Test");
+            SceneManager.LoadScene("WinScreen");
         }
     }
 }

@@ -40,23 +40,30 @@ public class MapChoiceScript : MonoBehaviour
     {
         SceneManager.LoadScene("Event");
     }
+    public void nodeBoss()
+    {
+        SceneManager.LoadScene("Boss");
+    }
 
     public void nodeType()
-    { 
+    {
         switch (PlayerData.Instance.getDepth())
         {
             case 0:
+                PlayerData.Instance.setVisited(13);
                 PlayerData.Instance.setOpen1(1);
                 PlayerData.Instance.setOpen2(2);
                 break;
             case 1:
                 if (subNode == '1')
                 {
+                    PlayerData.Instance.setVisited(0);
                     PlayerData.Instance.setOpen1(1);
                     PlayerData.Instance.setOpen2(2);
                 }
                 else
                 {
+                    PlayerData.Instance.setVisited(1);
                     PlayerData.Instance.setOpen1(2);
                     PlayerData.Instance.setOpen2(3);
                 }
@@ -64,16 +71,19 @@ public class MapChoiceScript : MonoBehaviour
             case 2:
                 if (subNode == '1')
                 {
+                    PlayerData.Instance.setVisited(2);
                     PlayerData.Instance.setOpen1(1);
                     PlayerData.Instance.setOpen2(-1);
                 }
                 else if (subNode == '3')
                 {
+                    PlayerData.Instance.setVisited(4);
                     PlayerData.Instance.setOpen1(-1);
                     PlayerData.Instance.setOpen2(2);
                 }
                 else
                 {
+                    PlayerData.Instance.setVisited(3);
                     PlayerData.Instance.setOpen1(1);
                     PlayerData.Instance.setOpen2(2);
                 }
@@ -81,12 +91,48 @@ public class MapChoiceScript : MonoBehaviour
             case 3:
                 PlayerData.Instance.setOpen1(1);
                 PlayerData.Instance.setOpen2(-1);
+                if (subNode == '1')
+                {
+                    PlayerData.Instance.setVisited(5);
+                }
+                else
+                {
+                    PlayerData.Instance.setVisited(6);
+                }
                 break;
             case 4:
+                PlayerData.Instance.setVisited(14);
                 PlayerData.Instance.setOpen1(nodePos);
                 break;
             case 5:
+                if (subNode == '1')
+                {
+                    PlayerData.Instance.setVisited(7);
+                }
+                else if (subNode == '2')
+                {
+                    PlayerData.Instance.setVisited(8);
+                }
+                else
+                {
+                    PlayerData.Instance.setVisited(9);
+                }
                 PlayerData.Instance.setOpen1(nodePos);
+                break;
+            case 6:
+                if (subNode == '1')
+                {
+                    PlayerData.Instance.setVisited(10);
+                }
+                else if (subNode == '2')
+                {
+                    PlayerData.Instance.setVisited(11);
+                }
+                else
+                {
+                    PlayerData.Instance.setVisited(12);
+                }
+                PlayerData.Instance.setOpen1(1);
                 break;
             default:
                 break;
@@ -99,7 +145,11 @@ public class MapChoiceScript : MonoBehaviour
                 nodeCombat();
                 break;
             case 2:
+            case 4:
                 nodeEvent();
+                break;
+            case 3:
+                nodeBoss();
                 break;
             default:
                 nodeCombat();
