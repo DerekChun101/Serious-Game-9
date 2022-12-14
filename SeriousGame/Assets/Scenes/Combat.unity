@@ -1746,7 +1746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3426744662079833451, guid: 0d2827216b973ef4bb906bbc333c0626, type: 3}
-  enemy2: {fileID: 0}
   Num_Enemy: 0
 --- !u!4 &1329690176
 Transform:
@@ -2064,7 +2063,7 @@ AudioSource:
   m_GameObject: {fileID: 1348002395}
   m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1fe2ef7208a21444e96bd146d4821ff0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2c7e542098bf4824a95a334bca09c1c3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2163,6 +2162,7 @@ GameObject:
   - component: {fileID: 1393403282}
   - component: {fileID: 1393403281}
   - component: {fileID: 1393403280}
+  - component: {fileID: 1393403283}
   m_Layer: 5
   m_Name: Options Button
   m_TagString: Untagged
@@ -2234,7 +2234,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1393403281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393403283}
+        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
+        m_MethodName: Settings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1393403281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2273,6 +2285,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393403278}
   m_CullTransparentMesh: 1
+--- !u!114 &1393403283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393403278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d19d300272550841aad7f7e0984c9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1442291464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,7 +3280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

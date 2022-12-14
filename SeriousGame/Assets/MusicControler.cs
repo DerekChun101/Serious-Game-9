@@ -13,7 +13,6 @@ public class MusicControler : MonoBehaviour
                 DontDestroyOnLoad(this);
                 Instance = this;
                 _audioSource = GetComponent<AudioSource>();
-                GameObject.FindGameObjectWithTag("Music").GetComponent<MusicControler>().PlayMusic();
             }
             else
                 Destroy(gameObject);
