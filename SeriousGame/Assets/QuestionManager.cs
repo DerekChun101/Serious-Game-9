@@ -16,6 +16,7 @@ public class QuestionManager : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
     public int damage;
+    public int enemyDamage;
     public int questionSet;
     public Animator animator; //Controlls player animation
     [SerializeField] GameObject swordSlash;
@@ -33,7 +34,9 @@ public class QuestionManager : MonoBehaviour
     public void Update()
     {
         enemy = GameObject.FindWithTag("Enemy");
-        
+        if(enemy == null) {
+            enemy = GameObject.FindWithTag("boss");
+        }
     }
     public void correct()
     {
@@ -48,7 +51,8 @@ public class QuestionManager : MonoBehaviour
 
     public void wrong()
     {
-        player.GetComponent<Player>().damage(3);
+        enemyDamage = enemy.GetComponent<Enemy>().returnstrength();
+        player.GetComponent<Player>().damage(enemyDamage);
         makeQuestion();
     }
 
@@ -58,8 +62,11 @@ public class QuestionManager : MonoBehaviour
         enemy.GetComponent<Enemy>().damage(damage);
     }
     void spawnProjectile() {
+            float x = player.transform.position.x;
+            float y = player.transform.position.y;
 
-            Vector2 position = new Vector2(-4, 2);
+
+            Vector2 position = new Vector2(x + 2, y);
             GameObject new_projectile = Instantiate(swordSlash, position, Quaternion.identity);
             AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
             

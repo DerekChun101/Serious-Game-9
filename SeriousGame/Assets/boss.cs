@@ -1,34 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Enemy : MonoBehaviour
+public class boss : MonoBehaviour
 {
     [SerializeField] public int health;
     [SerializeField] public int armor;
     [SerializeField] public int strength;
     [SerializeField] AudioSource audio1;
-    // Start is called before the first frame update
     void Start()
     {
-        if (gameObject.tag == "Enemy")
-        {
-            health = 5;
-            armor = 0;
-            strength = 2;
-        }
-        else if(gameObject.tag == "boss")
-        {
-            health = 15;
-            armor = 2;
-            strength = 5;
-        }
-    }
-    public int returnstrength(){
-        return strength;
+        health = 15;
+        armor = 2;
+        strength = 10;
     }
 
+    // Update is called once per frame
+    
     public void damage(int x)
     {
         x -= armor;
@@ -51,3 +39,4 @@ public class Enemy : MonoBehaviour
          Destroy(gameObject);
     }
 }
+
