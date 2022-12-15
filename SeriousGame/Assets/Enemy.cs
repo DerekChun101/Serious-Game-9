@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
         else if(gameObject.tag == "boss")
         {
             health = 15;
-            armor = 2;
+            armor = 1;
             strength = 4;
             healthBar.SetMaxHealth(health);
             healthBar.SetHealth(health);
