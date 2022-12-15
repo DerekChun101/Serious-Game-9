@@ -14,4 +14,14 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
+    public void BackToMainMenu()
+    {
+        PlayerData.Instance.defaultSettings();
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void goToInstructions()
+    {
+        SceneManager.LoadScene("InstructionsMenu");
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class isEnemyDead : MonoBehaviour
 {
+    [SerializeField] AudioSource audio1;
     public GameObject enemy;
     // Start is called before the first frame update
     void Start()
@@ -18,16 +19,18 @@ public class isEnemyDead : MonoBehaviour
         enemy = GameObject.FindWithTag("Enemy");
         if(enemy == null)
         {
-            Win();
+            StartCoroutine(Win());
         }
         
     }
-    void Win()
+    IEnumerator Win()
     {
         if (enemy == null)
         {
             enabled = false;
             Debug.Log("You Win");
+            AudioSource.PlayClipAtPoint(audio1.clip, transform.position);
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene("Map");
         }
     }
