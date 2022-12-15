@@ -16,6 +16,7 @@ public class PlayerData : MonoBehaviour
     bool settingsOpen;
     public GameObject[] settingsMenu;
     bool[] visited = new bool[15];
+    bool difficultFight = false;
 
     public static PlayerData Instance;
 
@@ -168,5 +169,15 @@ public class PlayerData : MonoBehaviour
     public bool[] getVisited()
     {
         return visited;
+    }
+
+    public void setDifficultFight(bool x)
+    {
+        difficultFight = x;
+    }
+
+    public bool getDifficultFight()
+    {
+        return difficultFight;
     }
 }

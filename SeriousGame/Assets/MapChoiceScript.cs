@@ -141,6 +141,10 @@ public class MapChoiceScript : MonoBehaviour
         nodeButton.interactable = false;
         switch (GetComponent<NodeTypeScript>().typeOfNode)
         {
+            case 1:
+                PlayerData.Instance.setDifficultFight(true);
+                nodeCombat();
+                break;
             case 0:
                 nodeCombat();
                 break;
@@ -149,6 +153,7 @@ public class MapChoiceScript : MonoBehaviour
                 nodeEvent();
                 break;
             case 3:
+                PlayerData.Instance.setDifficultFight(true);
                 nodeBoss();
                 break;
             default:
