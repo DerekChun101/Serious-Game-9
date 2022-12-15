@@ -6,12 +6,17 @@ public class PlayerData : MonoBehaviour
 {
 
     int playerHealth;
+    int playerCurrentHealth;
     int playerArmor;
     int playerStrength;
     int[] openNode = new int[2];
     int depth;
     int[] nodes = new int[13];
     bool set;
+    bool settingsOpen;
+    public GameObject[] settingsMenu;
+    bool[] visited = new bool[15];
+    bool difficultFight = false;
 
     public static PlayerData Instance;
 
@@ -30,15 +35,34 @@ public class PlayerData : MonoBehaviour
 
     void Start()
     {
+        settingsOpen = false;
+        settingsMenu = GameObject.FindGameObjectsWithTag("Settings");
+        foreach (GameObject g in settingsMenu)
+        {
+            g.SetActive(false);
+        }
+        defaultSettings();
+    }
+
+    public void defaultSettings()
+    {
         playerHealth = 10;
+        playerCurrentHealth = playerHealth;
         playerArmor = 1;
         playerStrength = 2;
         depth = 0;
         openNode[0] = 0;
         openNode[1] = -1;
         set = false;
+        for (int i = 0; i < visited.Length; i++)
+        {
+            visited[i] = false;
+        }
     }
-
+    public void setCurrentHealth(int x) 
+    {
+        playerCurrentHealth = x;
+    }
     public void setHealth(int x)
     {
         playerHealth = x;
@@ -53,7 +77,10 @@ public class PlayerData : MonoBehaviour
     {
         playerStrength = x;
     }
-
+    public int getCurrentHealth() 
+    {
+        return playerCurrentHealth;
+    }
     public int getHealth()
     {
         return playerHealth;
@@ -117,5 +144,40 @@ public class PlayerData : MonoBehaviour
     public int[] getNode()
     {
         return nodes;
+    }
+
+    public void setSettingsOpen()
+    {
+        settingsOpen = !settingsOpen;
+    }
+
+    public bool getSettingsOpen()
+    {
+        return settingsOpen;
+    }
+
+    public GameObject[] getSettingsMenu()
+    {
+        return settingsMenu;
+    }
+
+    public void setVisited(int i)
+    {
+        visited[i] = true;
+    }
+
+    public bool[] getVisited()
+    {
+        return visited;
+    }
+
+    public void setDifficultFight(bool x)
+    {
+        difficultFight = x;
+    }
+
+    public bool getDifficultFight()
+    {
+        return difficultFight;
     }
 }

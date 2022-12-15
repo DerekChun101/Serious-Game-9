@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Enemy2
+  - Settings
+  - projectile
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -42,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Settings
+    uniqueID: 2930762031
+    locked: 0
+  - name: front
+    uniqueID: 2089179275
     locked: 0

@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class MusicControler : MonoBehaviour
 {
+    public static MusicControler Instance;
     private AudioSource _audioSource;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
-        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicControler>().PlayMusic();
+        if (Instance == null)
+            {
+                DontDestroyOnLoad(this);
+                Instance = this;
+                _audioSource = GetComponent<AudioSource>();
+            }
+            else
+                Destroy(gameObject);
+        
+        
     }
 
     public void PlayMusic()
