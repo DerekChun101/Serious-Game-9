@@ -1908,6 +1908,7 @@ MonoBehaviour:
     - 4
     - 5
     - 7
+<<<<<<< HEAD
     CorrectAnswer: 1
   - Question: 8 * 4
     Answers:
@@ -2113,6 +2114,115 @@ MonoBehaviour:
     - 4
     - -4
     CorrectAnswer: 4
+=======
+    CorrectAnswer: 1
+  - Question: 8 * 4
+    Answers:
+    - 11
+    - 24
+    - 12
+    - 32
+    CorrectAnswer: 4
+  - Question: 16 - 2
+    Answers:
+    - 18
+    - 14
+    - 16
+    - 8
+    CorrectAnswer: 2
+  - Question: 81 / 9
+    Answers:
+    - 72
+    - 19
+    - 9
+    - 13
+    CorrectAnswer: 3
+  - Question: 5 + 15 / 5
+    Answers:
+    - 8
+    - 4
+    - 12
+    - 5
+    CorrectAnswer: 1
+  - Question: 9 * 15
+    Answers:
+    - 135
+    - 150
+    - 24
+    - 160
+    CorrectAnswer: 1
+  - Question: 9 * 2 + 4
+    Answers:
+    - 15
+    - 54
+    - 22
+    - 32
+    CorrectAnswer: 3
+  - Question: 11 - 3 * 2
+    Answers:
+    - 16
+    - 5
+    - 6
+    - 17
+    CorrectAnswer: 2
+  - Question: 12 / 6 + 2
+    Answers:
+    - 5
+    - 8
+    - 6
+    - 4
+    CorrectAnswer: 4
+  QnA2:
+  - Question: x^2 + 7x - 30
+    Answers:
+    - x = -10, 3
+    - x = 10, 3
+    - x = 7, -30
+    - x = -7, 30
+    CorrectAnswer: 1
+  - Question: Simplify 10x/(x - 8) * (6x^2 - 48x)/6x
+    Answers:
+    - 5x / 3
+    - 10x
+    - 10x / (x - 8)
+    - (6x(x - 8))/6x
+    CorrectAnswer: 2
+  - Question: Expand (x + 5)(x^2 - 3)
+    Answers:
+    - 3x^5-3x+5x^2- 5
+    - x^2-5x+3x^1-15
+    - x^3-3x^2+5x^1-15
+    - x^3-3x+5x^2-15
+    CorrectAnswer: 4
+  - Question: 4(x + 3) + 9 - 5 =32
+    Answers:
+    - x = 7
+    - x = 6
+    - x = 4
+    - ' x = 0'
+    CorrectAnswer: 3
+  - Question: 'x^2 - 8x + 12 '
+    Answers:
+    - x = 8, 12
+    - x = -2, -6
+    - x = -8, 12
+    - 'x = 2, 6 '
+    CorrectAnswer: 4
+  - Question: "Simplify 7x \u2013 4(3x + 2) \u2013 2(4 \u2013 9x) + 7  "
+    Answers:
+    - 15x
+    - '13x - 9 '
+    - 9x + 4
+    - -14x + 2
+    CorrectAnswer: 2
+  - Question: Expand (x+5)(x-1)
+    Answers:
+    - x^2 + 6x - 5
+    - x^2 + 5x - 4
+    - x^2+4x-5
+    - x^2 - 5x + 6
+    CorrectAnswer: 3
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
   QnA3:
   - Question: 'Area of a triangle: w = 5 h = 6'
     Answers:
@@ -2198,6 +2308,7 @@ MonoBehaviour:
     - 58
     - 148
     CorrectAnswer: 3
+<<<<<<< HEAD
   - Question: The circumference of a circle is 30. What is its area?
     Answers:
     - 15pie
@@ -2219,6 +2330,8 @@ MonoBehaviour:
     - 4, 5, and 6
     - 4, 9, and 10
     CorrectAnswer: 1
+=======
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
   QnA4:
   - Question: Find the derivative of 5x^7+ 12x^3+2x+1
     Answers:
@@ -2262,6 +2375,7 @@ MonoBehaviour:
     - (1/2)x^3 - (1/3)x^2 + 2x + C
     - '2x^3 -1.5x^2 + 7x + C '
     CorrectAnswer: 4
+<<<<<<< HEAD
   - Question: 'Find the antiderivative 6x^3 - 9x + 4 '
     Answers:
     - 12x^2 + 5x^6 + 7x + 10
@@ -2325,6 +2439,8 @@ MonoBehaviour:
     - 7t^-6 + (1/2)t - 3
     - 8t + 5t - (1/4)
     CorrectAnswer: 2
+=======
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
   options:
   - {fileID: 1021028753}
   - {fileID: 22123834}

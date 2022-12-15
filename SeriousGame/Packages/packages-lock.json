@@ -1,11 +1,19 @@
 {
   "dependencies": {
     "com.unity.2d.animation": {
+<<<<<<< HEAD
       "version": "7.0.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "6.0.3",
+=======
+      "version": "7.0.8",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "6.0.5",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.uielements": "1.0.0"
@@ -13,7 +21,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
+<<<<<<< HEAD
       "version": "6.0.3",
+=======
+      "version": "6.0.5",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -39,12 +51,21 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
+<<<<<<< HEAD
       "version": "6.0.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.animation": "7.0.6",
         "com.unity.2d.common": "6.0.3",
+=======
+      "version": "6.0.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.animation": "7.0.8",
+        "com.unity.2d.common": "6.0.5",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
         "com.unity.2d.sprite": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -56,12 +77,20 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
+<<<<<<< HEAD
       "version": "7.0.5",
+=======
+      "version": "7.0.6",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
+<<<<<<< HEAD
         "com.unity.2d.common": "6.0.3",
+=======
+        "com.unity.2d.common": "6.0.4",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
         "com.unity.2d.path": "5.0.2",
         "com.unity.modules.physics2d": "1.0.0"
       },
@@ -164,7 +193,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
+<<<<<<< HEAD
       "version": "1.4.2",
+=======
+      "version": "1.6.0",
+>>>>>>> 87829bcd6bf23f99bb3eb02868b5214d10f02c2f
       "depth": 1,
       "source": "registry",
       "dependencies": {
