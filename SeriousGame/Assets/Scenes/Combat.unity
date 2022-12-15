@@ -2199,21 +2199,21 @@ MonoBehaviour:
     - 58
     - 148
     CorrectAnswer: 3
-  - Question: Which of the following could be the side lengths of a right triangle?
+  - Question: Which could be the side lengths of a right triangle?
     Answers:
     - 5, 12, and 13
     - 3, 13, and 14
     - 4, 5, and 6
     - 5, 10, and 15
     CorrectAnswer: 1
-  - Question: The circumference of a circle is 30. What is its area?
+  - Question: The circumference = 30. What is its area?
     Answers:
     - '400pi '
     - 225pi
     - 15pi
     - 3000pi
     CorrectAnswer: 2
-  - Question: What is the sum of the measures of the interior angles of a hexagon?
+  - Question: Sum of the interior angles of a hexagon?
     Answers:
     - "540\xB0"
     - "720\xB0"
@@ -2312,6 +2312,20 @@ MonoBehaviour:
     - 3t^6 - 8t
     - 7t^7 - 8t^6 + 9
     CorrectAnswer: 1
+  - Question: Find the derivative x(3x^2 - 9)
+    Answers:
+    - 9x^2 -9
+    - 10x^4 - 10
+    - 8x^4 + 8x + 8
+    - 5x^3 - 8x + 9
+    CorrectAnswer: 1
+  - Question: Find the derivative y^-4 - 9y^-3 + 8y^-2  + 12
+    Answers:
+    - 9y^2 + 9
+    - 2y^3 + 7y^4 + 8
+    - -4y^-5 + 27y^-4 - 16y^-3
+    - 9y^9 - 7y^-9 + 7
+    CorrectAnswer: 3
   options:
   - {fileID: 1021028753}
   - {fileID: 22123834}
