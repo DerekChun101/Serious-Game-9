@@ -24,7 +24,14 @@ public class QuestionManager : MonoBehaviour
 
     private void Start()
     {
-        questionSet = Random.Range(0, 4);
+        if (PlayerData.Instance.getDifficultFight())
+        {
+            questionSet = 3;
+            PlayerData.Instance.setDifficultFight(false);
+        } else
+        {
+            questionSet = Random.Range(0, 3);
+        }
         makeQuestion();
         if(player == null){
         player = GameObject.FindWithTag("Player");
