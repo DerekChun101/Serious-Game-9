@@ -105,6 +105,7 @@ MonoBehaviour:
   armor: 0
   strength: 0
   audio1: {fileID: -5239806056810223941}
+  healthBar: {fileID: 7641292878207216589, guid: 427aa5dc9b8fa5c4d8a73fba3221cf47, type: 3}
 --- !u!114 &-5959804253683224710
 MonoBehaviour:
   m_ObjectHideFlags: 0

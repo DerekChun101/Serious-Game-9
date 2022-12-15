@@ -8,11 +8,14 @@ public class boss : MonoBehaviour
     [SerializeField] public int armor;
     [SerializeField] public int strength;
     [SerializeField] AudioSource audio1;
+    public HealthBar healthBar; 
     void Start()
     {
         health = 15;
         armor = 2;
-        strength = 10;
+        strength = 2;
+        healthBar.SetMaxHealth(health);
+        healthBar.SetHealth(health);
     }
 
     // Update is called once per frame
