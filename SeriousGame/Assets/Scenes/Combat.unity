@@ -2058,14 +2058,14 @@ MonoBehaviour:
     - x = 144
     - x = 12
     CorrectAnswer: 3
-  - Question: A traiangle has angles 52, 30, x
+  - Question: A triangle has angles 52, 30, x
     Answers:
     - x = 98
     - x = 82
     - x = 180
     - x = 35
     CorrectAnswer: 1
-  - Question: A traiangle has angles 124, 27, x
+  - Question: A triangle has angles 124, 27, x
     Answers:
     - x = 151
     - x = 39
