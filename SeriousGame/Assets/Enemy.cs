@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         if (gameObject.tag == "Enemy")
         {
-            health = 5;
+            health = 4;
             armor = 0;
             strength = 2;
         }
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         {
             health = 15;
             armor = 2;
-            strength = 5;
+            strength = 4;
             healthBar.SetMaxHealth(health);
             healthBar.SetHealth(health);
         }
